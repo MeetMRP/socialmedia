@@ -29,7 +29,14 @@ Install the project dependencies from `requirements.txt`:
 pip install -r requirements.txt
 ```
 
-### Step 5: Run the Project
+### Step 5: Make Migrations
+Prepare the database migrations:
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### Step 6: Run the Project
 Start the project with Django's development server:
 ```bash
 python manage.py runserver
